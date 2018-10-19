@@ -10,6 +10,19 @@
   <!-- <link rel="stylesheet" href="style.css"> -->
 
 </head>
+<style>
+body {
+    background-color: crimson
+}
+
+h1 {
+    color: darkorchid
+}
+
+p {
+    color: #42f4bc;
+}
+</style>
 
 <body>
   <h1 id="name">Name</h1>
@@ -18,12 +31,12 @@
   <p id="skills">Skills</p>
   <p id="work">Work</p>
   <p id="contact">Contact</p>
-  <img src="http://127.0.0.1:8000/image.jpg" />
+  <img src="http://162.246.157.225:8000/image.jpg" />
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>
   $(window).on('load', function(){
      // change the URL to your server URL here
-     $.getJSON("http://127.0.0.1:8000/api/person/1/", function (data) {
+     $.getJSON("http://162.246.157.225:8000/api/person/1/", function (data) {
           $("#name").text(data.data.attributes.name);
           $("#about").text(data.data.attributes.about);
           $("#education").text(data.data.attributes.education);
